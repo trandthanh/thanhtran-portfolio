@@ -1,12 +1,8 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+@media (max-width: 414px) {
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+@media (min-width: 415px) and (max-width: 768px) {
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+@media (min-width: 769px) {
 }
