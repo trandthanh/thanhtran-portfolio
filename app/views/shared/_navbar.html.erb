@@ -1,3 +1,71 @@
-<div class="navbar-thanhtranportfolio width-20vw backgroundcolor-blue height-100vh">
+<div class="navbar-thanhtranportfolio width-18vw backgroundcolor-blue height-100vh display-flex flexdirection-column alignitems-center justifycontent-spacebetween paddingbottom-20px">
+  <div class="navbar-logo-thanhtranportfolio">
+    <%= link_to root_path do %>
+      <%= image_tag "thanhtran-logo.png", class: "height-80px" %>
+    <% end %>
+  </div>
+  <div class="navbar-menu-thanhtranportfolio display-flex flexdirection-column">
+    <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-home-thanhtranportfolio">
+      <%= link_to root_path do %>
+        <% if current_page?(root_path) %>
+          <%= image_tag "house-active.png", class: "height-50px marginy-10px image" %>
+        <% else %>
+          <%= image_tag "house.png", class: "height-50px marginy-10px image" %>
+        <% end %>
+        <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
+          <h6 class="margin-0 color-palatinateblue">HOME</h6>
+        </div>
+      <% end %>
+    </div>
 
+    <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-about-thanhtranportfolio">
+      <%= link_to about_path do %>
+        <% if current_page?(about_path) %>
+          <%= image_tag "woman-active.png", class: "height-50px marginy-10px" %>
+        <% else %>
+          <%= image_tag "woman.png", class: "height-50px marginy-10px" %>
+        <% end %>
+        <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
+          <h6 class="margin-0 color-palatinateblue">ABOUT</h6>
+        </div>
+      <% end %>
+    </div>
+
+
+    <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-projects-thanhtranportfolio">
+      <%= link_to projects_path do %>
+        <% if current_page?(projects_path) %>
+          <%= image_tag "mouse-active.png", class: "height-50px marginy-10px" %>
+        <% else %>
+          <%= image_tag "mouse.png", class: "height-50px marginy-10px" %>
+        <% end %>
+        <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
+          <h6 class="margin-0 color-palatinateblue">PROJECTS</h6>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-contact-thanhtranportfolio">
+      <%= link_to contact_path do %>
+        <% if current_page?(contact_path) %>
+          <%= image_tag "mail-active.png", class: "height-50px marginy-10px" %>
+        <% else %>
+          <%= image_tag "mail.png", class: "height-50px marginy-10px" %>
+        <% end %>
+        <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
+          <h6 class="margin-0 color-palatinateblue">CONTACT</h6>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="navbar-social-thanhtranportfolio display-flex">
+    <%= link_to "https://github.com/trandthanh" do %>
+      <i class="fab fa-github fontsize-30px marginx-5px"></i>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/in/trandgthanh" do %>
+      <i class="fab fa-linkedin-in fontsize-30px marginx-5px"></i>
+    <% end %>
+  </div>
 </div>
+

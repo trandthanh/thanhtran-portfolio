@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-thanhtran-portfolio display-flex flexdirection-column alignitems-center width-82vw justifycontent-spacearound">
+  <div class="home-part1-thanhtran-portfolio">
+    <div class="home-title-thanhtran-portfolio textalign-center">
+      <h1>Welcome<br>
+        My name is <span class="color-palatinateblue textdecoration-underline">Thanh</span><br>
+        I'm a web developer
+      </h1>
+    </div>
+    <div class="home-subtitle-thanhtran-portfolio">
+      <p class="fontweight-300 color-ashgrey">full-stack / html, css, javascript / ruby on rails / wordpress</p>
+    </div>
+  </div>
+
+  <%= link_to projects_path, class: "color-aliceblue" do %>
+    <div class="home-button-thanhtran-portfolio backgroundcolor-palatinateblue padding-20px borderradius-50px border-2pxsolidpalatinateblue">
+      <h6 class="margin-0">SEE MY WORK</h6>
+    </div>
+  <% end %>
+
+  <div class="home-picture-thanhtran-portfolio">
+    <%= image_tag "home-picture.png", class: "height-450px margintop-neg260px marginleft-neg350px" %>
+  </div>
+</div>

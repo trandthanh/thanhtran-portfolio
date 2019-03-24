@@ -1,8 +1,52 @@
-@media (max-width: 414px) {
+// @media (max-width: 414px) {
+// }
+
+// @media (min-width: 415px) and (max-width: 768px) {
+// }
+
+// @media (min-width: 769px) {
+
+// }
+
+.navbar-menu-item-overlay-thanhtranportfolio {
+  opacity: 0;
+  position: absolute;
+  background-color: $yankees-blue;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
 }
 
-@media (min-width: 415px) and (max-width: 768px) {
+.navbar-menu-item-home-thanhtranportfolio {
+  position: relative;
 }
 
-@media (min-width: 769px) {
+.navbar-menu-item-home-thanhtranportfolio:hover .navbar-menu-item-overlay-thanhtranportfolio {
+  opacity: 1;
+}
+
+.navbar-menu-item-about-thanhtranportfolio {
+  position: relative;
+}
+
+.navbar-menu-item-about-thanhtranportfolio:hover .navbar-menu-item-overlay-thanhtranportfolio {
+  opacity: 1;
+}
+
+.navbar-menu-item-projects-thanhtranportfolio {
+  position: relative;
+}
+
+.navbar-menu-item-projects-thanhtranportfolio:hover .navbar-menu-item-overlay-thanhtranportfolio {
+  opacity: 1;
+}
+
+.navbar-menu-item-contact-thanhtranportfolio {
+  position: relative;
+}
+
+.navbar-menu-item-contact-thanhtranportfolio:hover .navbar-menu-item-overlay-thanhtranportfolio {
+  opacity: 1;
 }

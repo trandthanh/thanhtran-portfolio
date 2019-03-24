@@ -1,0 +1,10 @@
+.navbar-social-thanhtranportfolio a {
+  color: $ash-grey;
+}
+
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
