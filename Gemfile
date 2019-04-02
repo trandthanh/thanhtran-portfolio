@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'cloudinary', '~> 1.9.1'
 gem 'mailgun-ruby', '~>1.1.6'
+gem "figaro"
 
 group :development do
   gem 'web-console', '>= 3.3.0'
