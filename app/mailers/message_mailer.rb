@@ -8,9 +8,9 @@ class MessageMailer < ApplicationMailer
 
     mg_client = Mailgun::Client.new ENV['MAILGUN_API_KEY']
     message_params = {:from => message.email,
-                      :to => ENV['email'],
+                      :to => "trandgthanh@gmail.com",
                       :subject => 'Contact Form',
                       :text => message.body}
-    mg_client.send_message ENV['MAILGUN_DOMAIN'], message_params
+    mg_client.send_message "thanhtran.herokuapp.com", message_params
   end
 end

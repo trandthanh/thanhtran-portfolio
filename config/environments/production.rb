@@ -85,7 +85,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :mailgun
   config.action_mailer.mailgun_settings = {
-   api_key: 'ENV["mailgun_secret_api_key"]',
+   api_key: 'ENV["MAILGUN_API_KEY"]',
    domain: 'thanhtran.herokuapp.com',
   }
 
