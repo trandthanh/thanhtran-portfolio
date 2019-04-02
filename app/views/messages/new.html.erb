@@ -1,0 +1,21 @@
+<div class="contact-thanhtran-portfolio width-82vw">
+  <div class="contact-part1-thanhtran-portfolio paddingtop-100px paddingbottom-100px display-flex flexdirection-column alignitems-center backgroundcolor-aliceblue">
+    <div class="contact-title-thanhtran-portfolio ">
+      <h1>Let's work <span class="color-palatinateblue textdecoration-underline">together</span><br>
+      </h1>
+    </div>
+  </div>
+  <div class="contact-part2-thanhtran-portfolio textalign-center paddingbottom-40px">
+    <%= form_for @message, url: create_message_url do |f| %>
+      <%= notice %>
+      <%= @message.errors.full_messages.join(', ') %>
+
+      <%= f.text_field :name, placeholder: 'name' %>
+      <%= f.email_field :email, placeholder: 'email' %>
+      <%= f.text_field :subject, placeholder: 'subject' %>
+      <%= f.text_area :body, placeholder: 'body' %>
+      <%= f.submit 'Send' %>
+    <% end %>
+  </div>
+</div>
+

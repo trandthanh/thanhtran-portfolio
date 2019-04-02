@@ -46,8 +46,8 @@
     </div>
 
     <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-contact-thanhtranportfolio">
-      <%= link_to contact_path do %>
-        <% if current_page?(contact_path) %>
+      <%= link_to new_message_path do %>
+        <% if current_page?(new_message_path) %>
           <%= image_tag "mail-active.png", class: "height-50px marginy-10px" %>
         <% else %>
           <%= image_tag "mail.png", class: "height-50px marginy-10px" %>
