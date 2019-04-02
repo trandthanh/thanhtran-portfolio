@@ -16,10 +16,8 @@
 
 .projects-button-thanhtran-portfolio {
   &:hover {
-    border: 2px solid $palatinate-blue;
+    border: 2px solid $palatinate-blue !important;
     background-color: $alice-blue;
-    h6 {
-      color: $palatinate-blue;
-    }
+    color: $palatinate-blue;
   }
 }
