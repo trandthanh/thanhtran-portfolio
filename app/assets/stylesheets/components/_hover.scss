@@ -13,3 +13,13 @@
     color: $palatinate-blue;
   }
 }
+
+.projects-button-thanhtran-portfolio {
+  &:hover {
+    border: 2px solid $palatinate-blue;
+    background-color: $alice-blue;
+    h6 {
+      color: $palatinate-blue;
+    }
+  }
+}
