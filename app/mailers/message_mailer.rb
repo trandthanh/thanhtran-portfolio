@@ -11,6 +11,6 @@ class MessageMailer < ApplicationMailer
                       :to => 'trandgthanh@gmail.com',
                       :subject => 'Contact Form',
                       :text => message.body}
-    mg_client.send_message 'thanhtran.herokuapp.com', message_params
+    mg_client.send_message 'sandbox73e99d98c1b54f47b9e077a8ee7f93f8.mailgun.org', message_params
   end
 end
