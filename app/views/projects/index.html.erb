@@ -8,54 +8,51 @@
   <div class="projects-part2-thanhtran-portfolio textalign-center paddingbottom-40px">
     <div class="projects-tabs-thanhtran-portfolio display-flex justifycontent-center">
 
-      <% if params[:commit] == "FREELANCE" %>
+      <% if params[:search] == "FREELANCE" %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'ALL') %>
           <%= submit_tag "ALL", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'FREELANCE') %>
           <%= submit_tag "FREELANCE", class: "projects-button-thanhtran-portfolio backgroundcolor-palatinateblue paddingy-20px borderradius-50px border-2pxsolidpalatinateblue width-150px color-white marginx-10px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'PERSONAL') %>
           <%= submit_tag "PERSONAL", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
-      <% elsif params[:commit] == "PERSONAL" %>
+      <% elsif params[:search] == "PERSONAL" %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'ALL') %>
           <%= submit_tag "ALL", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'FREELANCE') %>
           <%= submit_tag "FREELANCE", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'PERSONAL') %>
           <%= submit_tag "PERSONAL", class: "projects-button-thanhtran-portfolio backgroundcolor-palatinateblue paddingy-20px borderradius-50px border-2pxsolidpalatinateblue width-150px color-white marginx-10px" %>
         <% end %>
       <% else %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'ALL') %>
           <%= submit_tag "ALL", class: "projects-button-thanhtran-portfolio backgroundcolor-palatinateblue paddingy-20px borderradius-50px border-2pxsolidpalatinateblue width-150px color-white marginx-10px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'FREELANCE') %>
           <%= submit_tag "FREELANCE", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
+          <%= hidden_field_tag(:search, 'PERSONAL') %>
           <%= submit_tag "PERSONAL", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
       <% end %>
     </div>
     <div class="projects-gallery-thanhtran-portfolio">
       <div class="container">
-        <div class="row paddingtop-50px">
-          <% @projects.each do |project| %>
-            <div class="col-xs-12 col-sm-6">
-              <%= link_to project.link do %>
-                <div class="projects-card-thanhtranportfolio marginbottom-30px" style="background-image: url('<%= cloudinary_url("portfolio-projects/#{project.slug}.png") %>'); background-size: cover; background-position: top center; height: 260px;">
-                  <div class="projects-card-overlay-thanhtranportfolio display-flex flexdirection-column alignitems-center justifycontent-center">
-                    <h3 class="margin-0 color-palatinateblue"><%= project.name %></h6>
-                    <p class="fontweight-300 color-yankeesblue"><%= project.description %></p>
-                    <h6 class="color-black"><%= project.language %></h6>
-                  </div>
-              <% end %>
-              </div>
-            </div>
-          <% end %>
+        <div class="row paddingtop-50px" id="ajax-projects">
+          <%= render 'projects', project: @projects %>
         </div>
       </div>
     </div>

@@ -1,0 +1,13 @@
+<% project.each do |project| %>
+  <div class="col-xs-12 col-sm-6">
+    <%= link_to project.link do %>
+      <div class="projects-card-thanhtranportfolio marginbottom-30px" style="background-image: url('<%= cloudinary_url("portfolio-projects/#{project.slug}.png") %>'); background-size: cover; background-position: top center; height: 260px;">
+        <div class="projects-card-overlay-thanhtranportfolio display-flex flexdirection-column alignitems-center justifycontent-center">
+          <h3 class="margin-0 color-palatinateblue"><%= project.name %></h6>
+          <p class="fontweight-300 color-yankeesblue"><%= project.description %></p>
+          <h6 class="color-black"><%= project.language %></h6>
+        </div>
+    <% end %>
+    </div>
+  </div>
+<% end %>
