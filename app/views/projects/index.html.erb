@@ -11,7 +11,7 @@
       <% if params[:search] == "FREELANCE" %>
         <%= form_tag(projects_path, method: :get) do %>
           <%= hidden_field_tag(:search, 'ALL') %>
-          <%= submit_tag "ALL", class: "projects-button-thanhtran-portfolio paddingy-20px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
+          <%= submit_tag "ALL", class: "projects-button-thanhtran-portfolio paddingy-10px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
           <%= hidden_field_tag(:search, 'FREELANCE') %>
