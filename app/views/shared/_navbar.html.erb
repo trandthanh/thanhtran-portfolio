@@ -1,16 +1,16 @@
 <div class="navbar-thanhtranportfolio width-18vw backgroundcolor-blue height-100vh display-flex flexdirection-column alignitems-center justifycontent-spacebetween paddingbottom-20px position-fixed">
   <div class="navbar-logo-thanhtranportfolio">
     <%= link_to root_path do %>
-      <%= image_tag "thanhtran-logo.png", class: "height-80px" %>
+      <%= image_tag "thanhtran-logo.png", class: "width-100pc" %>
     <% end %>
   </div>
   <div class="navbar-menu-thanhtranportfolio display-flex flexdirection-column">
     <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-home-thanhtranportfolio">
       <%= link_to root_path do %>
         <% if current_page?(root_path) %>
-          <%= image_tag "house-active.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "house-active.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% else %>
-          <%= image_tag "house.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "house.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% end %>
         <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
           <h6 class="margin-0 color-palatinateblue">HOME</h6>
@@ -21,9 +21,9 @@
     <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-about-thanhtranportfolio">
       <%= link_to about_path do %>
         <% if current_page?(about_path) %>
-          <%= image_tag "woman-active.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "woman-active.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% else %>
-          <%= image_tag "woman.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "woman.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% end %>
         <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
           <h6 class="margin-0 color-palatinateblue">ABOUT</h6>
@@ -35,9 +35,9 @@
     <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-projects-thanhtranportfolio">
       <%= link_to projects_path do %>
         <% if current_page?(projects_path) %>
-          <%= image_tag "mouse-active.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "mouse-active.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% else %>
-          <%= image_tag "mouse.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "mouse.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% end %>
         <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
           <h6 class="margin-0 color-palatinateblue">PROJECTS</h6>
@@ -48,9 +48,9 @@
     <div class="navbar-menu-item-thanhtranportfolio navbar-menu-item-contact-thanhtranportfolio">
       <%= link_to new_message_path do %>
         <% if current_page?(new_message_path) %>
-          <%= image_tag "mail-active.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "mail-active.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% else %>
-          <%= image_tag "mail.png", class: "height-50px marginy-10px" %>
+          <%= image_tag "mail.png", class: "navbar-menu-icon-thanhtranportfolio marginy-10px" %>
         <% end %>
         <div class="navbar-menu-item-overlay-thanhtranportfolio display-flex alignitems-center justifycontent-center">
           <h6 class="margin-0 color-palatinateblue">CONTACT</h6>
@@ -61,11 +61,52 @@
 
   <div class="navbar-social-thanhtranportfolio display-flex">
     <%= link_to "https://github.com/trandthanh" do %>
-      <i class="fab fa-github fontsize-30px marginx-5px"></i>
+      <i class="fab fa-github navbar-menu-social-thanhtranportfolio marginx-5px"></i>
     <% end %>
     <%= link_to "https://www.linkedin.com/in/trandgthanh" do %>
-      <i class="fab fa-linkedin-in fontsize-30px marginx-5px"></i>
+      <i class="fab fa-linkedin-in navbar-menu-social-thanhtranportfolio marginx-5px"></i>
     <% end %>
   </div>
 </div>
+
+
+<div class="navbar-mobile-thanhtranportfolio backgroundcolor-blue height-80px display-flex alignitems-center justifycontent-spacebetween paddingx-10px">
+  <div class="navbar-logo-thanhtranportfolio">
+    <%= link_to root_path do %>
+      <%= image_tag "thanhtran-logo-mobile.png", class: "height-50px" %>
+    <% end %>
+  </div>
+
+  <div class="navbar-burgermenu-thanhtranportfolio" id="opennavmenu">
+    <i class="fas fa-bars color-ashgrey marginright-20px fontsize-30px"></i>
+  </div>
+</div>
+
+
+<div id="myNavMenu" class="navmenu navbarburger-mobile-thanhtranportfolio">
+  <a href="#" class="closemenu">×</a>
+  <div class="navbarburgermenu-mobile-thanhtranportfolio margintop-100px">
+    <%= link_to root_path do %>
+      <h1 class="textalign-center">HOME</h1>
+    <% end %>
+    <%= link_to about_path do %>
+      <h1 class="textalign-center">ABOUT</h1>
+    <% end %>
+    <%= link_to projects_path do %>
+      <h1 class="textalign-center">PROJECTS</h1>
+    <% end %>
+    <%= link_to new_message_path do %>
+      <h1 class="textalign-center">CONTACT</h1>
+    <% end %>
+  </div>
+  <div class="navbarburgersocial-mobile-thanhtranportfolio margintop-40px display-flex justifycontent-center">
+    <%= link_to "https://github.com/trandthanh" do %>
+      <i class="fab fa-github navbar-menu-social-thanhtranportfolio marginx-5px"></i>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/in/trandgthanh" do %>
+      <i class="fab fa-linkedin-in navbar-menu-social-thanhtranportfolio marginx-5px"></i>
+    <% end %>
+  </div>
+</div>
+
 

@@ -1,4 +1,4 @@
-<div class="projects-thanhtran-portfolio width-82vw">
+<div class="projects-thanhtran-portfolio">
   <div class="projects-part1-thanhtran-portfolio paddingtop-100px paddingbottom-100px display-flex flexdirection-column alignitems-center backgroundcolor-aliceblue">
     <div class="projects-title-thanhtran-portfolio ">
       <h1>My <span class="color-palatinateblue textdecoration-underline">work</span><br>
@@ -19,7 +19,7 @@
         <% end %>
         <%= form_tag(projects_path, method: :get) do %>
           <%= hidden_field_tag(:search, 'PERSONAL') %>
-          <%= submit_tag "PERSONAL", class: "projects-button-thanhtran-portfolio paddingy-10px width-150px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
+          <%= submit_tag "PERSONAL", class: "projects-button-thanhtran-portfolio paddingy-10px color-ashgrey marginx-10px backgroundcolor-transparent border-2pxsolidaliceblue borderradius-50px" %>
         <% end %>
       <% elsif params[:search] == "PERSONAL" %>
         <%= form_tag(projects_path, method: :get) do %>

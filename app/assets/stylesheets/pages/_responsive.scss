@@ -1,0 +1,195 @@
+@media (max-width: 414px) {
+  .navbar-thanhtranportfolio {
+    display: none;
+  }
+
+  .home-title-thanhtran-portfolio {
+    padding: 15px;
+  }
+
+  .home-subtitle-thanhtran-portfolio {
+    text-align: center;
+  }
+
+  /* The side navigation menu */
+  .navmenu {
+    height: 0; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: $yankees-blue; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s;
+  }
+
+  /* The navigation menu links */
+  .navmenu a {
+    text-decoration: none;
+    font-size: 40px;
+    color: $palatinate-blue;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .navmenu i {
+    color: $ash-grey;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .navmenu a:hover {
+    color: $palatinate-blue;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .navmenu .closemenu {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    color: $ash-grey;
+  }
+
+  .about-part1-thanhtran-portfolio {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-boxhalf-thanhtran-portfolio h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .projects-button-thanhtran-portfolio {
+    width: max-content;
+  }
+
+  .projects-buttonsend-thanhtran-portfolio {
+    width: 150px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .navbar-menu-icon-thanhtranportfolio {
+      height: 30px;
+  }
+
+  .navbar-menu-social-thanhtranportfolio {
+    font-size: 20px;
+  }
+
+  .home-thanhtran-portfolio {
+    height: 200vh;
+  }
+
+  .about-part1-thanhtran-portfolio {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-part2-thanhtran-portfolio {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-mobile-thanhtranportfolio {
+    display: none;
+  }
+
+  .content-thanhtranportfolio {
+    width: 82vw;
+    margin-left: 18vw;
+  }
+
+  .body-thanhtranportfolio {
+    display: flex;
+  }
+
+  .navmenu {
+    display: none;
+  }
+
+  .about-boxhalf-thanhtran-portfolio {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .projects-button-thanhtran-portfolio {
+    width: 150px;
+  }
+
+  .projects-thanhtran-portfolio {
+    width: 82vw;
+  }
+
+  .contact-thanhtran-portfolio {
+    width: 82vw;
+  }
+
+  .projects-buttonsend-thanhtran-portfolio {
+    width: 150px;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-menu-icon-thanhtranportfolio {
+    height: 50px;
+  }
+
+  .navbar-menu-social-thanhtranportfolio {
+    font-size: 30px;
+  }
+
+  .home-thanhtran-portfolio {
+    height: 100vh;
+  }
+
+  .about-part2-thanhtran-portfolio {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .navbar-mobile-thanhtranportfolio {
+    display: none;
+  }
+
+  .content-thanhtranportfolio {
+    width: 82vw;
+    margin-left: 18vw;
+  }
+
+  .body-thanhtranportfolio {
+    display: flex;
+  }
+
+  .navmenu {
+    display: none;
+  }
+
+  .about-boxhalf-thanhtran-portfolio {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .projects-button-thanhtran-portfolio {
+    width: 150px;
+  }
+
+  .projects-thanhtran-portfolio {
+    width: 82vw;
+  }
+
+  .contact-thanhtran-portfolio {
+    width: 82vw;
+  }
+
+  .projects-buttonsend-thanhtran-portfolio {
+    width: 150px;
+  }
+}
+
+
+
+

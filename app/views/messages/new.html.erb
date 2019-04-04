@@ -1,6 +1,6 @@
-<div class="contact-thanhtran-portfolio width-82vw">
+<div class="contact-thanhtran-portfolio">
   <div class="contact-part1-thanhtran-portfolio paddingtop-100px paddingbottom-100px display-flex flexdirection-column alignitems-center backgroundcolor-aliceblue">
-    <div class="contact-title-thanhtran-portfolio ">
+    <div class="contact-title-thanhtran-portfolio textalign-center">
       <h1>Let's work <span class="color-palatinateblue textdecoration-underline">together</span><br>
       </h1>
     </div>
@@ -8,7 +8,7 @@
   <div class="contact-part2-thanhtran-portfolio textalign-center paddingbottom-40px">
     <div class="container">
       <div class="row justifycontent-center">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-8 col-lg-6">
           <%= form_for @message, url: create_message_url do |f| %>
             <%= notice %>
             <%= @message.errors.full_messages.join(', ') %>
@@ -31,7 +31,7 @@
               <%= f.label :body, "Your message (required)", class: "color-ashgrey" %>
               <%= f.text_area :body, class: "width-100pc borderradius-12px height-150px border-0" %>
             </div>
-            <%= f.submit 'SEND', class: "projects-button-thanhtran-portfolio backgroundcolor-palatinateblue paddingy-10px borderradius-50px border-2pxsolidpalatinateblue width-150px color-white marginx-10px margintop-20px" %>
+            <%= f.submit 'SEND', class: "projects-buttonsend-thanhtran-portfolio backgroundcolor-palatinateblue paddingy-10px borderradius-50px border-2pxsolidpalatinateblue width-150px color-white marginx-10px margintop-20px" %>
           <% end %>
 
         </div>
