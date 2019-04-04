@@ -32,10 +32,13 @@
               <%= f.text_area :body, class: "width-100pc borderradius-12px height-150px border-0" %>
             </div>
             <div class="form-group">
-              <%= f.check_box :consent %>
-              <%= f.label "I understand that this form collects my name and email so I can be contacted." %>
+              <div class="form-check-input">
+                <%= f.check_box :consent %>
+                <%= f.label "I understand that this form collects my name and email so I can be contacted." %>
+
+              </div>
             </div>
-            <%= f.submit 'SEND', class: "projects-buttonsend-thanhtran-portfolio backgroundcolor-ashgrey paddingy-10px borderradius-50px width-150px color-white marginx-10px margintop-20px", disabled: true %>
+            <%= f.submit 'SEND', class: "projects-buttonsend-thanhtran-portfolio backgroundcolor-ashgrey paddingy-10px borderradius-50px width-150px color-white marginx-10px margintop-100px", disabled: true %>
           <% end %>
 
         </div>
